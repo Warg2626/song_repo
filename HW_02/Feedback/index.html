@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <center>
+        <h1>Feedback</h1>
+    </center>
+  
+    <form name="Authorization">
+        <fieldset>
+            <legend>Authorization</legend>
+            <table align="center">
+                <tr>
+                  <td><label for="fname">First name</label></td>
+                  <td><input type="fname" id="fname"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="user@user.com"></td>
+                </tr>
+                <tr>
+                     <td><label for="pros">Pros</label></td>
+                     <td><input type="text" id="pros" name="pros" placeholder="Main pros"></td>
+                </tr>
+                <tr>
+                  <td><label for="cons">Cons</label></td>
+                  <td><input type="text" id="cons" name="cons" placeholder="Main cons"></td>
+                </tr>
+                <tr>
+                  <td><label for="overview">Overview:</label></td>
+                  <td><textarea id="overview" name="overview" rows="4" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                  <td><label for="rating">Rating</label></td>
+                  <td><input type="number" id="rating" name="rating" min="1" max="5" value="5"></td>
+                </tr>
+                 <tr>
+                  <td colspan="2" align="center">
+                     <input type="checkbox" id="newsletter" name="newsletter">
+                     <label for="newsletter">Subscribe me to the newsletter</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="center">
+                      <input type="submit" value="Send">
+                  </td>
+                </tr>
+            
+        </fieldset>
+      </table>
+    </form>
+</body>
+</html>
