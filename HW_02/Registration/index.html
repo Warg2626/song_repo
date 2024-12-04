@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <center>
+        <h1>Registration</h1>
+    </center>
+  
+    <form name="Registration"><!--style="margin: 50px 100px 50px 100px;"-->
+        <fieldset>
+            <legend>Registration</legend>
+            <table align="left"> 
+              
+              <!-- Common Section -->
+              <tr>
+              <th align="left">Common:</th>
+              </tr>
+              
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" placeholder="John" required><span>* Field is required</span></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Surname</label></td>
+                    <td><input type="text" id="lname" placeholder="Doe" required><span>* Field is required</span></td>
+                </tr>
+              
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="male" id="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="female" id="female" required>
+                        <label for="female">Female</label>
+                    </td>
+                
+                </tr>
+              
+                <tr>
+                        <td><label for="birthday">Birthday:</label></td>
+                        <td><input type="date" id="birthday" name="birthday"><span>*01/01/1990</span></td>
+             
+               </tr>
+              <td colspan="3"><hr></td>
+              
+               <!-- Address Section -->
+                        <tr align="left">
+                           <th>Address:</th>
+                        </tr>
+                 <tr>
+                        <td><label for="country">Country:</label></td>
+                        <td>
+                            <select id="country" name="country" required>
+                              <option value="">Select</option>
+                              <option value="ukrane">Ukraine</option>
+                              <option value="usa">USA</option>
+                              <option value="canada">Canada</option>
+                            </select>
+                        </td>
+                 </tr>
+                 <td colspan="3"><hr></td>
+              
+              <!-- Other Section -->
+              <tr>
+                  <th align="left">Other:</th>
+              </tr> 
+              
+                  <tr>
+                            <td><label for="favcolor">Select your favorite color:</label></td>
+                            <td><input type="color" id="favcolor" name="favcolor"></td>
+                  </tr>
+              
+                  <tr>
+                             <td><label for="myfile">Select a file:</label></td>
+                             <td><input type="file" id="myfile" name="myfile"> </td>
+                  </tr>
+              
+                <td colspan="3"><hr></td>
+              
+              <!-- Security Section -->
+              
+                 <tr>
+                    <th align="left">Security:</th>
+                 </tr>
+              
+                 <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" placeholder="password" required><span>* Field is required</span></td>
+                </tr>
+              
+                 <tr>
+                         <td><label for="confirmPassword">Repeat Password</label></td>
+                         <td><input type="password" id="confirmPassword" required></td>
+               </tr> 
+              
+                <tr>
+                    <td><label for="login">Login</label></td>
+                    <td><input type="email" id="login" placeholder="user@user.com" required><span>* Field is required</span></td>
+                </tr>
+              
+              <td colspan="3"><hr></td>
+              
+                <tr>
+                      <td><label for="terms">I agree to the Terms and Conditions</label></td>
+                  
+                      <td><input type="checkbox" id="terms" required>
+                          
+                          <input type="submit" value="Submit">
+                      </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
